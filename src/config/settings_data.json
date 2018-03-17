@@ -1,0 +1,585 @@
+{
+  "current": {
+    "color_text": "#3d4246",
+    "color_body_text": "#788188",
+    "color_sale_text": "#7796a8",
+    "color_borders": "#e8e9eb",
+    "color_button": "#7796a8",
+    "color_button_text": "#fff",
+    "color_small_button": "#fff",
+    "color_small_button_text": "#3d4246",
+    "color_text_field": "#fff",
+    "color_text_field_text": "#000",
+    "color_image_overlay_text": "#fff",
+    "color_image_overlay": "#3d4246",
+    "image_overlay_opacity": 25,
+    "color_body_bg": "#fff",
+    "type_header_family": "Google_Oswald_400_sans",
+    "type_header_base_size": "24px",
+    "type_base_family": "Google_Lato_400_sans",
+    "type_base_size": "16px",
+    "type_bold_product_titles": false,
+    "share_image": "",
+    "share_facebook": true,
+    "share_twitter": false,
+    "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "https://facebook.com/maderamakers",
+    "social_pinterest_link": "https://www.pinterest.com.mx/maderamakers/",
+    "social_instagram_link": "https://www.instagram.com/maderamakers/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "shopify://shop_images/LogoMaderMakersHachas.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify://shop_images/LogoMaderMakersWeb.png",
+          "logo_max_width": "100",
+          "main_linklist": "main-menu",
+          "message": false,
+          "home_page_only": true,
+          "message_text": "Announce something here",
+          "message_link": "",
+          "color_bg": "#7796a8",
+          "color_text": "#fff"
+        }
+      },
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify://shop_images/carpenter-at-work.jpg",
+          "alignment": "center",
+          "title": "FABRICAMOS TU MOBILIARIO A MEDIDA",
+          "text": "<p><em>En Madera Makers fabricamos y personalizamos cualquier tipo de proyecto en carpinter&iacute;a que tengas en mente.</em></p>",
+          "hero_size": "medium",
+          "text_size": "large",
+          "button_label": "Pide tu cotización ahora",
+          "button_link": "shopify://pages/muebles-a-medida"
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "slideshow-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/carpenter-at-work.jpg",
+              "alignment": "top",
+              "title": "FABRICAMOS TU MOBILIARIO A MEDIDA",
+              "subheading": "En Madera Makers fabricamos y personalizamos cualquier tipo de proyecto en carpintería que tengas en mente.",
+              "link": "",
+              "button_label": "Pide tu cotización ahora",
+              "button_link": "shopify://pages/muebles-a-medida"
+            }
+          },
+          "slideshow-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/teak-headboard-table.jpg",
+              "alignment": "top",
+              "title": "PRODUCTOS PARA TU HOGAR Y OFICINA",
+              "subheading": "Piezas muy atractivas, de gran calidad y 100% personalizables",
+              "link": "",
+              "button_label": "Mira nuestro catálogo",
+              "button_link": "shopify://collections/all"
+            }
+          }
+        },
+        "block_order": [
+          "slideshow-0",
+          "slideshow-1"
+        ],
+        "settings": {
+          "autoplay": true,
+          "autoplay_speed": "5000",
+          "slideshow_height": "small",
+          "text_size": "large"
+        }
+      },
+      "featured-collections": {
+        "type": "collection",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "frontpage",
+          "grid": 3,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "settings": {
+          "image": "",
+          "layout": "left",
+          "title": "Diseño y fabricación de muebles y proyectos a medida",
+          "text": "<p>En Madera Makers hacemos, desde el librero que no encuentras en ninguna tienda hasta el proyecto de interiorismo que necesitas entregar en tiempo y forma.</p>\n<p>Puedes confiar en nosotros. Cada proyecto que hacemos es &uacute;nico y por lo mismo ponemos la m&aacute;xima atenci&oacute;n a la calidad y a los detalles.</p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "footer_linklist": "footer",
+          "footer_linklist_two": "",
+          "footer_newsletter_enable": false,
+          "show_payment_icons": false
+        }
+      },
+      "1520969478145": {
+        "type": "feature-row",
+        "settings": {
+          "image": "",
+          "layout": "right",
+          "title": "Productos únicos para necesidades únicas",
+          "text": "<p>Nuestros productos son otro boleto, nuestro respeto y amor por la madera as&iacute; como nuestra avanzada tecnolog&iacute;a nos permiten fabricar piezas de gran calidad y personalizables que facilitan tu vida y la hacen m&aacute;s bella.<br><br>Todos nuestros productos est&aacute;n garantizados y los ponemos en la puerta de tu hogar u oficina. Adem&aacute;s, aceptamos todos los medios de pago para tu total comodidad.</p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "1520969534191": {
+        "type": "quotes",
+        "blocks": {
+          "1520969534191-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Mand&eacute; hacer dos muebles custom y quedaron mejor que en el dise&ntilde;o y de excelente calidad.</p>",
+              "author": "Ivan Sánchez"
+            }
+          },
+          "1520969534191-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Ped&iacute; dos mesas para la oficina, se entregaron a tiempo y con excelente calidad.</p>",
+              "author": "Georgina González"
+            }
+          },
+          "1520969534191-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Mand&eacute; hacer un librero de un dise&ntilde;o que me gust&oacute; de Pinterest y la verdad es que superaron toda expectativa, qued&oacute; padr&iacute;simo! Altamente recomendable!</p>",
+              "author": "Guillermo Araiza"
+            }
+          }
+        },
+        "block_order": [
+          "1520969534191-0",
+          "1520969534191-1",
+          "1520969534191-2"
+        ],
+        "settings": {
+          "title": "Opiniones"
+        }
+      },
+      "hero-on-page": {
+        "type": "hero-on-page",
+        "settings": {
+          "image": "shopify://shop_images/man-crafting-wood.jpg",
+          "alignment": "center",
+          "title": "FABRICAMOS TU MOBILIARIO A MEDIDA",
+          "text": "<p>Utilizamos las mejores t&eacute;cnicas tradicionales&nbsp;y la tecnolog&iacute;a m&aacute;s avanzada para entregarte la m&aacute;xima calidad.</p>",
+          "hero_size": "medium",
+          "text_size": "large",
+          "button_label": "PIDE TU COTIZACION AHORA",
+          "button_link": "https://madera-makers.myshopify.com/pages/muebles-a-medida#formulario-de-cotizacion"
+        }
+      },
+      "1521077890870": {
+        "type": "feature-columns",
+        "blocks": {
+          "1521077890870-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1521077890870-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1521077890870-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1521078129039": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1521077890870-0",
+          "1521077890870-1",
+          "1521077890870-2",
+          "1521078129039"
+        ],
+        "settings": {
+          "title": "¿CÓMO FUNCIONA?",
+          "align_text": "left"
+        }
+      }
+    },
+    "content_for_index": [
+      "slideshow",
+      "feature-row",
+      "1520969478145",
+      "featured-collections",
+      "hero",
+      "1520969534191",
+      "1521077890870"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "color_text": "#3d4246",
+      "color_body_text": "#788188",
+      "color_sale_text": "#7796A8",
+      "color_borders": "#e8e9eb",
+      "color_button": "#7796A8",
+      "color_button_text": "#fff",
+      "color_small_button": "#fff",
+      "color_small_button_text": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": 25,
+      "color_body_bg": "#fff",
+      "type_header_family": "Google_Work+Sans_600_sans",
+      "type_header_base_size": "26px",
+      "type_base_family": "Google_Work+Sans_400_sans",
+      "type_base_size": "16px",
+      "type_bold_product_titles": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {}
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_linklist_two": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "feature-row",
+        "slideshow"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#757575",
+      "color_sale_text": "#ff574f",
+      "color_borders": "#e4e4e4",
+      "color_button": "#ff574f",
+      "color_button_text": "#ffffff",
+      "color_small_button": "#eaeaea",
+      "color_small_button_text": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 30,
+      "color_body_bg": "#f8f8f8",
+      "type_header_family": "Google_Muli_600_sans",
+      "type_header_base_size": "26px",
+      "type_base_family": "Google_Muli_600_sans",
+      "type_base_size": "18px",
+      "type_bold_product_titles": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": "135",
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "autoplay": true,
+            "autoplay_speed": "6000",
+            "slideshow_height": "medium",
+            "text_size": "medium"
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_linklist": "main-menu",
+            "footer_linklist_two": "footer",
+            "footer_newsletter_enable": true,
+            "show_payment_icons": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "medium",
+            "show_quantity_selector": false,
+            "show_variant_labels": true,
+            "show_vendor": false,
+            "enable_zoom": true,
+            "show_share_buttons": true
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": "2",
+            "rows": "2",
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {}
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}
