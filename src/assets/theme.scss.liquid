@@ -163,6 +163,10 @@
   background: linear-gradient(to $side, $from 0%, $to 100%);
 }
 
+@mixin text-uppercase() {
+  text-transform: uppercase;
+}
+
 @mixin spinner($size: 20px, $color: $color-btn-primary-text) {
   content: '';
   display: block;
@@ -1153,6 +1157,10 @@ $grid-breakpoints: (
   display: none !important;
 }
 
+.text-uppercase {
+  @include text-uppercase();
+}
+
 /*============================================================================
   Skip to content button
     - Overrides .visually-hidden when focused
@@ -1320,12 +1328,11 @@ h1 {
 }
 
 h2 {
-  font-size: em(floor($font-size-header * 0.78));
+  font-size: em(floor($font-size-header * 2));
   text-transform: uppercase;
-  letter-spacing: 0.1em;
 
   @include media-query($small) {
-    font-size: em(floor(($font-size-header * 0.78) * 0.9));
+    font-size: em(floor(($font-size-header * 2) * 0.9));
   }
 }
 
@@ -1356,10 +1363,10 @@ h5 {
 }
 
 h6 {
-  font-size: em(floor($font-size-header * 0.54));
+  font-size: em(floor($font-size-header * 0.67));
 
   @include media-query($small) {
-    font-size: em(floor(($font-size-header * 0.54) * 0.9));
+    font-size: em(floor(($font-size-header * 0.67) * 0.9));
   }
 }
 
@@ -1480,17 +1487,21 @@ li {
 
 .mega-title--large {
   font-size: em($font-size-header + 8);
+  // margin: 50px auto 5px;
+  padding-top: 65px;
+  background-image: url(#{'{{ "maderamakers-imago.svg" | asset_url }}'});
+  background-position: top;
+  background-repeat: no-repeat;
 
   @include media-query($medium-up) {
-    font-size: em(floor($font-size-header * 2.5));
+    font-size: em(floor($font-size-header * 2.75));
   }
 }
 
 .mega-subtitle {
   @include media-query($medium-up) {
-    font-size: em($font-size-base + 4);
+    font-size: em($font-size-base + 2);
     margin: 0 auto;
-    max-width: 75%;
   }
 
   p {
@@ -4651,10 +4662,7 @@ $color-slideshow-close-text: #000;
   position: absolute;
   width: 100%;
   top: 50%;
-  @include transform(translateY(-40%));
   opacity: 0;
-  transition: $transition-text-slideshow;
-  transition-delay: 0.3s;
   z-index: $z-index-slideshow-text;
 
   .slick-active &,
@@ -5255,7 +5263,8 @@ $toolbar-height-small: 46px;
 .hero__btn {
   background-color: $color-background-hero-button;
   color: $color-text-hero-button;
-  margin-top: $section-spacing / 2;
+  margin-top: $section-spacing;
+  font-size: em($font-size-base + 2);
 }
 
 /*================ Quote slider ================*/
@@ -5820,4 +5829,3 @@ $toolbar-height-small: 46px;
 .rich-text__text--small {
   font-size: em(floor($font-size-base * 0.88));
 }
-
