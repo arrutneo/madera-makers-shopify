@@ -1,69 +1,101 @@
 {% section 'hero-on-page' %}
-<div class="page-width">
-  <div class="grid">
-    <!-- <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth"> -->
-    <div class="grid__item">
-      <div class="section-header text-center">
-        <h2 class="text-uppercase">¿Cómo funciona?</h2>
-        <p>Ponemos en tus manos el mueble que tienes en tu cabeza.</p>
-      </div>
-      <!-- <div class="section-header text-center">
-        <h2>{{ page.title }}</h2>
-      </div> -->
-      <!-- <div class="rte">
-        {{ page.content }}
-      </div> -->
-    </div>
-    <div class="grid__item medium-up--one-quarter">
-      <div class="box-shadow text-center common-box">
-        <img src="{{ 'librero.svg' | asset_url }}" width="75" height="84" alt="Librero Madera Makers" >
-        <h6 class="text-uppercase">1. Tu idea</h6>
-        <p>Compártenos una foto o la idea del mueble que quieres.</p>
-      </div>
-    </div>
-    <div class="grid__item medium-up--one-quarter">
-      <div class="box-shadow text-center common-box">
-        <img src="{{ 'escritorio.svg' | asset_url }}" width="84" height="80" alt="Escritorio Madera Makers" >
-        <h6 class="text-uppercase">2. Cotización</h6>
-        <p>Obtén tu cotización personalizada en menos de 48 horas.</p>
-      </div>
-    </div>
-    <div class="grid__item medium-up--one-quarter">
-      <div class="box-shadow text-center common-box">
-        <img src="{{ 'mesa.svg' | asset_url }}" width="103" height="62" alt="Mesa Madera Makers" >
-        <h6 class="text-uppercase">3. Respuesta</h6>
-        <p>Pide tu mueble y prepárate para tenerlo.</p>
-      </div>
-    </div>
-    <div class="grid__item medium-up--one-quarter">
-      <div class="box-shadow text-center common-box">
-        <img src="{{ 'sofa.svg' | asset_url }}" width="79" height="73" alt="Sofa Madera Makers" >
-        <h6 class="text-uppercase">4. Disfruta</h6>
-        <p>Recibe tu mueble y disfrútalo.</p>
-      </div>
-    </div>
-    <div class="grid__item">
-      <div class="section-header text-center">
-        <h2 class="text-uppercase">Fabricamos tus muebles y proyectos a medida</h2>
-        <p>Seguimos tus especificaciones o si lo prefieres te las sugerimos.</p>
-      </div>
-    </div>
-    <div class="shopify-section index-section">
-      <div class="feature-row">
-        <div class="feature-row__item">
-          <div style="margin: 0 auto;" class="pxFormGenerator" id="r07QcsWhlyVOpdeODNt7qw"></div>
+<div id="custom-furniture-steps" class="shopify-section index-section">
+  <div class="page-width">
+    <div class="grid">
+      <div class="grid__item">
+        <div class="section-header text-center">
+          <h2 class="text-uppercase">¿Cómo funciona?</h2>
+          <p class="mega-subtitle">Ponemos en tus manos el mueble que tienes en tu cabeza.</p>
         </div>
-        <div class="feature-row__item feature-row__text feature-row__text--left">
-          <div class="rte-setting featured-row__subtext">
-            <p>En Madera Makers fabricamos muebles y proyectos de interiorismo a la medida, con los mejores materiales y la más alta calidad.</p>
-            <p>Lo hacemos a partir de tu idea o de una propuesta que armemos para ti según tus necesidades.</p>
-            <p>Para comenzar a trabajar por favor llena el formulario de la izquierda, adjunta cualquier boceto, dibujo, foto o plano que tengas. Si no tienes ninguna imagen, solo describe lo que necesitas y nosotros nos pondremos en contacto contigo para trabajar una propuesta.</p>
-            <p>¡Materializa tus ideas <strong>ahora</strong>!</p>
-            <p class="">
-              <img src="https://burst.shopifycdn.com/photos/shopify/living-room-brick-wall_720x.jpg" alt="">
-            </p>
+      </div>
+      <div class="grid__item medium-up--one-quarter">
+        <div class="box-shadow text-center common-box">
+          {% include 'icon-librero' %}
+          <h6 class="text-uppercase h6">1. Tu idea</h6>
+          <p>Compártenos una foto o la idea del mueble que quieres.</p>
+        </div>
+      </div>
+      <div class="grid__item medium-up--one-quarter">
+        <div class="box-shadow text-center common-box">
+          {% include 'icon-escritorio' %}
+          <h6 class="text-uppercase h6">2. Cotización</h6>
+          <p>Obtén tu cotización personalizada en menos de 48 horas.</p>
+        </div>
+      </div>
+      <div class="grid__item medium-up--one-quarter">
+        <div class="box-shadow text-center common-box">
+          {% include 'icon-mesa' %}
+          <h6 class="text-uppercase h6">3. Respuesta</h6>
+          <p>Pide tu mueble y prepárate para tenerlo.</p>
+        </div>
+      </div>
+      <div class="grid__item medium-up--one-quarter">
+        <div class="box-shadow text-center common-box">
+          {% include 'icon-sofa' %}
+          <h6 class="text-uppercase h6">4. Disfruta</h6>
+          <p>Recibe tu mueble y disfrútalo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="shopify-section index-section">
+  <div class="page-width">
+    <div class="grid">
+      <div class="grid__item">
+        <div class="section-header text-center">
+          <h2 class="text-uppercase">Fabricamos tus muebles y proyectos a medida</h2>
+          <p class="mega-subtitle">Seguimos tus especificaciones o si lo prefieres te las sugerimos.</p>
+        </div>
+      </div>
+      <div class="grid__item medium-up--one-half">
+        <div class="box-shadow common-box">
+          <div class="contact-form form-vertical">
+            {% form 'contact' %}
+
+              {% if form.posted_successfully? %}
+                <p class="note form-success">
+                  {{ 'contact.form.post_success' | t }}
+                </p>
+              {% endif %}
+
+              {{ form.errors | default_errors }}
+
+              <div class="grid grid--half-gutters">
+                <div class="grid__item medium-up--one-half">
+                  <label for="ContactFormName">{{ 'contact.form.name' | t }}</label>
+                  <input type="text" id="ContactFormName" name="contact[name]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+                </div>
+                <div class="grid__item medium-up--one-half">
+                  <label for="ContactFormEmail" class="{% if form.errors contains 'email' %}label--error{% endif %}">{{ 'contact.form.email' | t }}</label>
+                  <input type="email" id="ContactFormEmail" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" class="{% if form.errors contains 'email' %}input--error{% endif %}">
+                </div>
+              </div>
+
+              <label for="ContactFormPhone">{{ 'contact.form.phone' | t }}</label>
+              <input type="tel" id="ContactFormPhone" name="contact[phone]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+
+              <label for="ContactFormMessage">{{ 'contact.form.message' | t }}</label>
+              <textarea rows="10" id="ContactFormMessage" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+
+              <label for="ContactFormImage">Selecciona un imagen</label>
+              <input type="file" name="" value="">
+
+              <input type="submit" class="btn" value="{{ 'contact.form.submit' | t }}">
+
+            {% endform %}
           </div>
+          <!-- <div class="pxFormGenerator" id="r07QcsWhlyVOpdeODNt7qw"></div> -->
         </div>
+      </div>
+      <div class="grid__item medium-up--five-twelfths medium-up--push-one-twelfth">
+        <p>En Madera Makers fabricamos muebles y proyectos de interiorismo a la medida, con los mejores materiales y la más alta calidad.</p>
+        <p>Lo hacemos a partir de tu idea o de una propuesta que armemos para ti según tus necesidades.</p>
+        <p>Para comenzar a trabajar por favor llena el formulario de la izquierda, adjunta cualquier boceto, dibujo, foto o plano que tengas. Si no tienes ninguna imagen, solo describe lo que necesitas y nosotros nos pondremos en contacto contigo para trabajar una propuesta.</p>
+        <p>¡Materializa tus ideas <strong>ahora</strong>!</p>
+        <p class="">
+          <img src="https://burst.shopifycdn.com/photos/shopify/living-room-brick-wall_720x.jpg" alt="">
+        </p>
       </div>
     </div>
   </div>

@@ -1161,6 +1161,16 @@ $grid-breakpoints: (
   @include text-uppercase();
 }
 
+.box-shadow {
+  box-shadow: 0 10px 15px rgba(0,0,0,.07);
+}
+
+.common-box {
+  padding: 40px 24px 30px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+}
+
 /*============================================================================
   Skip to content button
     - Overrides .visually-hidden when focused
@@ -2292,6 +2302,12 @@ textarea {
     border: 1px solid $color-border;
     border-bottom: 1px solid transparent;
     z-index: 2;
+  }
+}
+
+.site-nav--active {
+  a {
+    text-decoration: underline;
   }
 }
 
@@ -5828,4 +5844,39 @@ $toolbar-height-small: 46px;
 }
 .rich-text__text--small {
   font-size: em(floor($font-size-base * 0.88));
+}
+
+/*================ Page A Medida ================*/
+#custom-furniture-steps {
+  .common-box {
+    height: 300px;
+  }
+  .h6 {
+    margin: ($section-spacing-small / 2) 0;
+  }
+  .icon {
+    box-sizing: content-box;
+  }
+  .icon-librero {
+    width: 75px;
+    height: 84px;
+  }
+
+  .icon-escritorio {
+    width: 84px;
+    height: 80px;
+    padding: 2px 0;
+  }
+
+  .icon-mesa {
+    width: 103px;
+    height: 62px;
+    padding: 11px 0;
+  }
+
+  .icon-sofa {
+    width: 79px;
+    height: 73px;
+    padding: 5px 0 6px;
+  }
 }

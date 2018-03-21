@@ -76,9 +76,9 @@
                     </h2>
                   {% endunless %}
                   {% unless block.settings.subheading == blank %}
-                    <span class="mega-subtitle slideshow__subtitle{% if section.settings.text_size == 'large' %} mega-subtitle--large{% endif %}">
+                    <em class="mega-subtitle slideshow__subtitle">
                       {{ block.settings.subheading | escape }}
-                    </span>
+                    </em>
                   {% endunless %}
                   {% unless block.settings.button_link == blank %}
                     <a href="{{ block.settings.button_link }}" class="btn hero__btn">
