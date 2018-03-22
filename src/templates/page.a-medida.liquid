@@ -39,7 +39,7 @@
     </div>
   </div>
 </div>
-<div class="shopify-section index-section">
+<div id="formulario-de-cotizacion" class="shopify-section index-section">
   <div class="page-width">
     <div class="grid">
       <div class="grid__item">
@@ -62,51 +62,39 @@
               {{ form.errors | default_errors }}
 
               <label for="ContactFormMessage">{{ 'contact.form.project_request' | t }}</label>
-              <input type="text" id="ContactFormMessage" name="contact[body]" value="{% if form.body %}{{ form.body }}{% endif %}">
+              <input required type="text" id="ContactFormMessage" name="contact[body]" value="{% if form.body %}{{ form.body }}{% endif %}">
 
-              <div class="grid grid--half-gutters">
-                <div class="grid__item medium-up--one-half">
-                  <label for="ContactFormName">{{ 'contact.form.name' | t }}</label>
-                  <input type="text" id="ContactFormName" name="contact[name]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
-                </div>
-                <div class="grid__item medium-up--one-half">
-                  <label for="ContactFormEmail" class="{% if form.errors contains 'email' %}label--error{% endif %}">{{ 'contact.form.email' | t }}</label>
-                  <input type="email" id="ContactFormEmail" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" class="{% if form.errors contains 'email' %}input--error{% endif %}">
-                </div>
-              </div>
+              <label>{{ 'contact.form.has_image' | t }}</label>
+              <label for="ContactFormImage" class="btn btn--secondary">{{ 'contact.form.choose_image' | t }}</label>
+              <span id="ContactFormImageMessage" class="visually-hidden">{{ 'contact.form.image_choosen' | t }}</span>
+              <input class="visibility-hidden" id="ContactFormImage" type="file" onchange="encodeImageFileAsURL(this)">
+
+              <label for="ContactFormName">{{ 'contact.form.name' | t }}</label>
+              <input type="text" id="ContactFormName" name="contact[name]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+
+              <label for="ContactFormEmail" class="{% if form.errors contains 'email' %}label--error{% endif %}">{{ 'contact.form.email' | t }}</label>
+              <input type="email" id="ContactFormEmail" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" class="{% if form.errors contains 'email' %}input--error{% endif %}">
 
               <label for="ContactFormPhone">{{ 'contact.form.phone' | t }}</label>
               <input type="tel" id="ContactFormPhone" name="contact[phone]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
 
-              <label>{{ 'contact.form.has_image' | t }}</label>
-              <label for="ContactFormImage" class="btn btn--secondary">{{ 'contact.form.choose_image' | t }}</label>
-              <input class="visibility-hidden" id="ContactFormImage" type="file" onchange="encodeImageFileAsURL(this)">
-
-              <!-- <label>{{ 'contact.form.has_file' | t }}</label>
-              <label for="ContactFormFile" class="btn btn--secondary">{{ 'contact.form.choose_file' | t }}</label>
-              <input class="visibility-hidden" id="ContactFormFile" type="file" onchange="encodeImageFileAsURL(this)"> -->
-
               <!-- https://codebeautify.org/base64-to-image-converter -->
-              <input class="visibility-hidden" type="text" id="ContactFormBirthday" name="contact[Birthday]" placeholder="Birthday">
+              <input class="visually-hidden" type="text" id="ContactFormImageBase64" name="contact[imageBase64]">
 
               <script type="text/javascript">
                 function encodeImageFileAsURL(element) {
                   var file = element.files[0];
                   var reader = new FileReader();
                   reader.onloadend = function() {
-                    console.log('RESULT', reader.result);
-                    $("#ContactFormBirthday").val(reader.result);
-                    console.log($("#prodId").val());
+                    $("#ContactFormImageBase64").val(reader.result);
+                    $("#ContactFormImageMessage").removeClass("visually-hidden");
                   }
                   reader.readAsDataURL(file);
                 }
               </script>
-
-              <input type="submit" class="btn" value="{{ 'contact.form.submit' | t }}">
-
+              <input type="submit" class="btn display-block" value="{{ 'contact.form.submit_quotation' | t }}">
             {% endform %}
           </div>
-          <div class="pxFormGenerator" id="r07QcsWhlyVOpdeODNt7qw"></div>
         </div>
       </div>
       <div class="grid__item medium-up--five-twelfths medium-up--push-one-twelfth">

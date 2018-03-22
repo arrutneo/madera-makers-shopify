@@ -153,14 +153,16 @@
   },
   "contact": {
     "form": {
-      "name": "¿Cuál es tu nombre?",
+      "name": "¿Cuál es tu nombre? (Opcional)",
       "email": "¿Cuál es tu correo?",
-      "phone": "Whatsapp/celular",
+      "phone": "Whatsapp/celular (Opcional)",
       "message": "Mensaje",
       "submit": "Enviar",
+      "submit_quotation": "Solicitar Cotización",
       "project_request": "¿Qué mueble o proyecto de carpintería quieres cotizar?",
-      "has_image": "¿Tienes alguna imagen del mueble que quieres?",
+      "has_image": "¿Tienes alguna imagen del mueble que quieres? (Opcional)",
       "choose_image": "Selecciona una imagen",
+      "image_choosen": "Imagen seleccionada correctamente",
       "has_file": "¿Tienes el plano de tu proyecto? ¡Adjúntalo también!",
       "choose_file": "Selecciona un archivo",
       "post_success": "Gracias por contactarnos. Le responderemos lo antes posible."

@@ -1,3 +1,6 @@
+// #dfa160
+// #eb4f47
+
 /*============================================================================
   Debut | Built with Shopify Slate
 
@@ -1171,6 +1174,14 @@ $grid-breakpoints: (
   border-radius: 3px;
 }
 
+.display-block {
+  display: block;
+}
+.font-base-plus-two {
+  font-size: em($font-size-base + 2);
+}
+
+
 /*============================================================================
   Skip to content button
     - Overrides .visually-hidden when focused
@@ -2170,10 +2181,10 @@ textarea {
     margin-right: 5px;
   }
 
-  [type="submit"],
-  .btn {
+  [type="file"] {
     display: inline-block;
-    width: auto;
+    width: 1px;
+    padding: 0
   }
 }
 
@@ -2910,6 +2921,12 @@ $slick-dot-size-small: 10px;
 
 .index-section--flush + .index-section--flush {
   margin-top: -($section-spacing-small * 2);
+}
+
+.index-section--flush + .index-section--fluck {
+  @include media-query($medium-up) {
+    margin-top: -($section-spacing);
+  }
 }
 
 [class*="index-section--flush"] + [class*="index-section--flush"] {
@@ -5284,8 +5301,8 @@ $toolbar-height-small: 46px;
 }
 
 .hero__btn {
-  background-color: $color-background-hero-button;
-  color: $color-text-hero-button;
+  // background-color: $color-background-hero-button;
+  // color: $color-text-hero-button;
   margin-top: $section-spacing;
   font-size: em($font-size-base + 2);
 }

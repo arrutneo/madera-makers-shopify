@@ -1,49 +1,49 @@
 {% section 'hero-on-contact-page' %}
-<div class="shopify-section index-section">
-  <div class="grid">
-    <div class="grid__item">
-          <div class="page-width">
+<div class="shopify-section index-section index-section--fluck">
+  <div class="page-width">
+    <div class="grid">
+      <div class="grid__item grid__item medium-up--five-twelfths font-base-plus-two">
+        <p>Madera Makers es una carpintería especializada en la fabricación y personalización de muebles y proyectos de interiorismo a medida. La formación multidisciplinar de nuestro equipo en áreas del diseño, la psicología y la ingeniería multimedia sumada a nuestra experiencia en la elaboración de piezas únicas a partir planos o ideas nos permite ofrecerte un servicio integral.</p>
+        <p>En Madera Makers te vamos a entender. Preséntanos tu necesidad, permítenos hacerte las preguntas clave y recibirás una cotización detallada de nuestra propuesta lista para ejecutar. Nuestra garantía va más allá de la calidad, nos comprometemos a entregarte en tiempo, forma y presupuesto.</p>
+        <p>Así que ¿necesitas una cotización? ¿tienes alguna duda con alguno de nuestros productos? ¿quieres qué te asesoramos con tus proyectos de carpintería o interiorismo? Mándanos un correo llenando el siguiente formulario o llámanos, a la vieja usanza.</p>
+        <p>Estamos esperando trabajar contigo.</p>
+      </div>
+      <div class="grid__item medium-up--one-half medium-up--push-one-twelfth">
+        <div class="box-shadow common-box">
+          <div class="contact-form form-vertical">
+            {% form 'contact' %}
 
-            {% if page.content.size > 0 %}
-              <div class="rte">
-                {{ page.content }}
-              </div>
-            {% endif %}
+              {% if form.posted_successfully? %}
+                <p class="note form-success">
+                  {{ 'contact.form.post_success' | t }}
+                </p>
+              {% endif %}
 
-            <div class="contact-form form-vertical">
-              {% form 'contact' %}
+              {{ form.errors | default_errors }}
 
-                {% if form.posted_successfully? %}
-                  <p class="note form-success">
-                    {{ 'contact.form.post_success' | t }}
-                  </p>
-                {% endif %}
-
-                {{ form.errors | default_errors }}
-
-                <div class="grid grid--half-gutters">
-                  <div class="grid__item medium-up--one-half">
-                    <label for="ContactFormName">{{ 'contact.form.name' | t }}</label>
-                    <input type="text" id="ContactFormName" name="contact[name]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
-                  </div>
-                  <div class="grid__item medium-up--one-half">
-                    <label for="ContactFormEmail" class="{% if form.errors contains 'email' %}label--error{% endif %}">{{ 'contact.form.email' | t }}</label>
-                    <input type="email" id="ContactFormEmail" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" class="{% if form.errors contains 'email' %}input--error{% endif %}">
-                  </div>
+              <div class="grid grid--half-gutters">
+                <div class="grid__item medium-up--one-half">
+                  <label for="ContactFormName">{{ 'contact.form.name' | t }}</label>
+                  <input type="text" id="ContactFormName" name="contact[name]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
                 </div>
+                <div class="grid__item medium-up--one-half">
+                  <label for="ContactFormEmail" class="{% if form.errors contains 'email' %}label--error{% endif %}">{{ 'contact.form.email' | t }}</label>
+                  <input type="email" id="ContactFormEmail" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" class="{% if form.errors contains 'email' %}input--error{% endif %}">
+                </div>
+              </div>
 
-                <label for="ContactFormPhone">{{ 'contact.form.phone' | t }}</label>
-                <input type="tel" id="ContactFormPhone" name="contact[phone]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+              <label for="ContactFormPhone">{{ 'contact.form.phone' | t }}</label>
+              <input type="tel" id="ContactFormPhone" name="contact[phone]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
 
-                <label for="ContactFormMessage">{{ 'contact.form.message' | t }}</label>
-                <textarea rows="10" id="ContactFormMessage" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+              <label for="ContactFormMessage">{{ 'contact.form.message' | t }}</label>
+              <textarea rows="10" id="ContactFormMessage" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
 
-                <input type="submit" class="btn" value="{{ 'contact.form.submit' | t }}">
+              <input type="submit" class="btn" value="{{ 'contact.form.submit' | t }}">
 
-              {% endform %}
-            </div>
+            {% endform %}
           </div>
         </div>
+      </div>
     </div>
   </div>
 </div>
