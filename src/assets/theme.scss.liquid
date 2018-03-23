@@ -5044,7 +5044,19 @@ $toolbar-height-small: 46px;
 }
 
 .site-footer {
-  margin: $section-spacing 0;
+  margin-top: $section-spacing;
+  padding: $section-spacing/2 0;
+  background-color: $color-text;
+  color: white;
+
+  a {
+    color: white;
+  }
+
+  .icon-logo-madera-makers {
+    height: 100px;
+    width: auto;
+  }
 
   @include media-query($small) {
     text-align: center;
@@ -5904,3 +5916,10 @@ $toolbar-height-small: 46px;
     padding: 5px 0 6px;
   }
 }
+
+#preview-bar-iframe {
+  display:none !important;
+}
+ html {
+   padding-bottom: 0 !important;
+ }
