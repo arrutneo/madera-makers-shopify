@@ -46,13 +46,13 @@
         "one": "{{ count }} resultado para \"{{ terms }}\"",
         "other": "{{ count }} resultados para \"{{ terms }}\""
       },
-      "title": "Buscar nuestro sitio",
+      "title": "Buscar en nuestro website",
       "placeholder": "Buscar",
       "submit": "Buscar",
       "close": "Cerrar (esc)"
     },
     "newsletter_form": {
-      "newsletter_email": "Join our mailing list",
+      "newsletter_email": "Suscríbete a nuestro boletín",
       "email_placeholder": "Dirección de correo electrónico",
       "confirmation": "Gracias por su suscripción",
       "submit": "Suscribir"
