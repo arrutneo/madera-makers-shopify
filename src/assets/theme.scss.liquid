@@ -1177,8 +1177,16 @@ $grid-breakpoints: (
 .display-block {
   display: block;
 }
+
 .font-base-plus-two {
   font-size: em($font-size-base + 2);
+}
+
+.rte-two-column {
+  @include media-query($medium-up) {
+    column-count: 2;
+    column-gap: 40px;
+  }
 }
 
 
@@ -1339,12 +1347,12 @@ h6 {
 }
 
 h1 {
-  font-size: em(floor($font-size-header * 1.35));
+  font-size: em(floor($font-size-header * 2));
   text-transform: uppercase;
   letter-spacing: 0;
 
   @include media-query($small) {
-    font-size: em(floor($font-size-header * 1.25));
+    font-size: em(floor(($font-size-header * 2) * 0.9));
   }
 }
 
@@ -4637,6 +4645,14 @@ $color-slideshow-close-text: #000;
 }
 
 /*================ Slide images ================*/
+
+.slideshow__slide--slideshow-0 {
+  .slideshow__image {
+    background-position: center 20% !important;    
+  }
+}
+
+
 .slideshow__image {
   transition: $transition-image-slideshow;
   position: absolute;
