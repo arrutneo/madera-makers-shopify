@@ -153,6 +153,7 @@
   },
   "contact": {
     "form": {
+      "body": "¿Qué mueble o proyecto de carpintería quieres cotizar?",
       "name": "¿Cuál es tu nombre? (Opcional)",
       "email": "¿Cuál es tu correo?",
       "phone": "Whatsapp/celular (Opcional)",

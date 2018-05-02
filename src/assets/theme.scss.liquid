@@ -1821,9 +1821,25 @@ a[href^="tel"] {
   padding-right: 15px;
 }
 
+.btn--loading {
+  color: transparent;
+
+  .spinner {
+    animation: loading .5s linear infinite;
+    // color: transparent;
+  }
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .btn--disabled {
   opacity: 0.5;
   cursor: default;
+  pointer-events: none;
 
   &:hover,
   &:focus {
@@ -2198,7 +2214,7 @@ textarea {
 
 /*================ Form feedback messages ================*/
 .note,
-.form--success,
+.form-success,
 .errors {
   padding: $input-padding-top-bottom-small;
   margin: 0 0 ($gutter-site / 2);
@@ -2212,7 +2228,7 @@ textarea {
   border: 1px solid $color-border;
 }
 
-.form--success {
+.form-success {
   border: 1px solid $color-success;
   background-color: $color-success-bg;
   color: $color-success;

@@ -70,7 +70,18 @@
   <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'theme.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
   <!--[if lte IE 9]><script src="{{ 'theme.js' | asset_url }}"></script><![endif]-->
 
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="https://sdk.amazonaws.com/js/aws-sdk-2.228.1.min.js" defer="defer"></script><!--<![endif]-->
+  <!--[if lte IE 9]><script src="{{ 'https://sdk.amazonaws.com/js/aws-sdk-2.228.1.min.js' | asset_url }}"></script><![endif]-->
+
+  <script>
+    var template = {{ template | json }};
+  </script>
+
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'customFurniture.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
+  <!--[if lte IE 9]><script src="{{ 'theme.js' | asset_url }}"></script><![endif]-->
+
   {{ content_for_header }}
+
 </head>
 
 <body class="template-{{ template | split: '.' | first }}">

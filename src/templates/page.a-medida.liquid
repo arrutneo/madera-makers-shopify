@@ -61,13 +61,13 @@
 
               {{ form.errors | default_errors }}
 
-              <label for="ContactFormMessage">{{ 'contact.form.project_request' | t }}</label>
-              <input required type="text" id="ContactFormMessage" name="contact[body]" value="{% if form.body %}{{ form.body }}{% endif %}">
+              <label for="ContactFormMessage">{{ 'contact.form.body' | t }}</label>
+              <input type="text" id="ContactFormMessage" name="contact[body]" value="{% if form.body %}{{ form.body }}{% endif %}">
 
               <label>{{ 'contact.form.has_image' | t }}</label>
               <label for="ContactFormImage" class="btn btn--secondary">{{ 'contact.form.choose_image' | t }}</label>
               <span id="ContactFormImageMessage" class="visually-hidden">{{ 'contact.form.image_choosen' | t }}</span>
-              <input class="visibility-hidden" id="ContactFormImage" type="file" onchange="encodeImageFileAsURL(this)">
+              <input class="visibility-hidden" id="ContactFormImage" type="file" onchange="imageFileSelected(this)">
 
               <label for="ContactFormName">{{ 'contact.form.name' | t }}</label>
               <input type="text" id="ContactFormName" name="contact[name]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
@@ -78,20 +78,7 @@
               <label for="ContactFormPhone">{{ 'contact.form.phone' | t }}</label>
               <input type="tel" id="ContactFormPhone" name="contact[phone]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
 
-              <!-- https://codebeautify.org/base64-to-image-converter -->
-              <input class="visually-hidden" type="text" id="ContactFormImageBase64" name="contact[imageBase64]">
-
-              <script type="text/javascript">
-                function encodeImageFileAsURL(element) {
-                  var file = element.files[0];
-                  var reader = new FileReader();
-                  reader.onloadend = function() {
-                    $("#ContactFormImageBase64").val(reader.result);
-                    $("#ContactFormImageMessage").removeClass("visually-hidden");
-                  }
-                  reader.readAsDataURL(file);
-                }
-              </script>
+              <input class="visually-hidden" type="text" id="ContactFormImageS3Link" name="contact[imageS3Link]">
               <input type="submit" class="btn display-block" value="{{ 'contact.form.submit_quotation' | t }}">
             {% endform %}
           </div>

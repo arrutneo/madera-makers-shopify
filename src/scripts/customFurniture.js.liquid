@@ -1,0 +1,78 @@
+if (template === "page.a-medida") {
+  var albumBucketName = 'reference-material.maderamakers.com';
+  var bucketRegion = 'us-west-2';
+  var IdentityPoolId = 'us-west-2:bc39a570-b47a-4983-988d-7cb4b9e8e7dc';
+  var sendForm = false;
+
+  AWS.config.update({
+    credentials: new AWS.CognitoIdentityCredentials({
+      IdentityPoolId: IdentityPoolId
+    }),
+    region: bucketRegion
+  });
+
+  var s3 = new AWS.S3({
+    apiVersion: '2006-03-01',
+    params: {Bucket: albumBucketName}
+  });
+
+  function encodeImageFileAsURL(element) {
+    var file = element.files[0];
+    var reader = new FileReader();
+    reader.onloadend = function() {
+      $("#ContactFormImageBase64").val(reader.result);
+      $("#ContactFormImageMessage").removeClass("visually-hidden");
+    }
+    reader.readAsDataURL(file);
+  }
+
+  function imageFileSelected(element) {
+    var file = element.files[0];
+    var reader = new FileReader();
+    reader.onloadend = function() {
+      $("#ContactFormImageMessage").removeClass("visually-hidden");
+    }
+    reader.readAsDataURL(file);
+  }
+
+  function addPhotoQuotations(albumName) {
+    var files = document.getElementById('ContactFormImage').files;
+    if (!files.length) {
+      sendForm = true;
+      $("#ContactFormImageS3Link").val("No image");
+      $("#contact_form").submit();
+      return
+    }
+    var file = files[0];
+    var fileName = file.name;
+    var albumPhotosKey = encodeURIComponent("/");
+    var photoKey = albumPhotosKey + fileName;
+
+    s3.upload({
+      Key: photoKey,
+      Body: file,
+      ACL: 'public-read',
+      ContentDisposition: 'inline',
+      ContentType: file.type,
+    }, function(err, data) {
+      if (err) {
+        $("#ContactFormImageMessage").text("Hubo un error al subir tu imagen, por favor envía el formulario sin ella o inténtalo más tarde. ¡Gracias!").removeClass("visually-hidden");
+        $("#ContactFormImageS3Link").val(err.message);
+        sendForm = true;
+        $("#contact_form").submit();
+      }
+      $("#ContactFormImageS3Link").val(data.Location);
+      $("#ContactFormImageMessage").removeClass("visually-hidden");
+      sendForm = true;
+      $("#contact_form").submit();
+    });
+  }
+
+  $("#contact_form").submit(function(event){
+    debugger
+    if (!sendForm) {
+      addPhotoQuotations("Quotations Assets");
+      event.preventDefault();
+    }
+  });
+}
