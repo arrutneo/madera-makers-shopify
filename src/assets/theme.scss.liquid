@@ -2371,8 +2371,7 @@ textarea {
   margin: 0;
   z-index: $z-index-dropdown;
   text-align: left;
-  border: 1px solid $color-border;
-  background: $color-bg;
+  background: $color-text;
   left: -1px;
   top: 41px;
 
@@ -3755,9 +3754,13 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 }
 
 .site-header--translucent {
-  background-color: rgba(34,34,34,.75);
+  background-color: rgba(34, 34, 34,.75);
   position: absolute;
   z-index: 1;
+
+  .site-nav__dropdown {
+    background-color: rgba(34, 34, 34,.75);
+  }
 }
 
 .announcement-bar {
