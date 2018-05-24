@@ -72,7 +72,7 @@
                 <div class="page-width">
                   {% unless block.settings.title == blank %}
                     <h2 class="h1 mega-title slideshow__title{% if settings.link != blank %} slideshow__title--has-link{% endif %}{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">
-                      {{ block.settings.title | escape }}
+                      {{ block.settings.title }}
                     </h2>
                   {% endunless %}
                   {% unless block.settings.subheading == blank %}
