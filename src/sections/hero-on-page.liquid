@@ -13,10 +13,10 @@
   <div class="hero__inner">
     <div class="page-width text-center">
       {% if section.settings.title != blank %}
-        <h1 class="h1 mega-title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">{{ section.settings.title | escape }}</h1>
+        <h1 class="h1 mega-title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">{{ section.settings.title }}</h1>
       {% endif %}
       {% if section.settings.text != blank %}
-        <div class="rte-setting mega-subtitle"><em>{{ section.settings.text }}</em></div>
+        <div class="rte-setting mega-subtitle">{{ section.settings.text }}</div>
       {% endif %}
       {% if section.settings.button_label != blank and section.settings.button_link != blank %}
         <a href="#formulario-de-cotizacion" class="btn hero__btn">

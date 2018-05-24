@@ -1750,23 +1750,20 @@ a[href^="tel"] {
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: $border-radius;
-  padding: $input-padding-top-bottom-small $input-padding-left-right-small;
+  padding: 12px $input-padding-left-right 7px;
   background-color: $color-btn-primary;
   color: $color-btn-primary-text;
   font-family: $font-stack-header;
-  font-weight: $font-weight-header;
+  font-weight: $font-weight-bold;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   white-space: normal;
   font-size: $font-size-base - 2;
 
-  @include media-query($medium-up) {
-    padding: $input-padding-top-bottom $input-padding-left-right;
-  }
-
   &:hover,
   &:focus {
-    opacity: $opacity-link-hover;
+    background-color: darken($color-btn-primary, 5%);
+    opacity: 1;
   }
 
   .icon-arrow-right,
@@ -4696,12 +4693,12 @@ $color-slideshow-close-text: #000;
 
 .slideshow__slide--slideshow-0 {
   .slideshow__image {
-    background-position: center 20% !important;
+    background-position: center top !important;
+    filter: grayscale(100%);
   }
 }
 
 .slideshow__image {
-  filter: grayscale(100%);
   transition: $transition-image-slideshow;
   position: absolute;
   top: 0;
@@ -5322,7 +5319,7 @@ $toolbar-height-small: 46px;
 
 .hero {
   position: relative;
-  height: 475px;
+  height: 660px;
   display: table;
   width: 100%;
   background: {
@@ -5362,11 +5359,11 @@ $toolbar-height-small: 46px;
   }
 
   .hero--medium {
-    height: 475px;
+    height: 660px;
   }
 
   .hero--large {
-    height: 650px;
+    height: 660px;
   }
 
   .hero--x-large {
