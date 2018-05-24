@@ -1515,7 +1515,6 @@ li {
 }
 
 .mega-title--large {
-  font-size: em($font-size-header + 8);
   // margin: 50px auto 5px;
   padding-top: 65px;
   background-image: url(#{'{{ "maderamakers-imago.svg" | asset_url }}'});
@@ -1529,7 +1528,7 @@ li {
 
 .mega-subtitle {
   @include media-query($medium-up) {
-    font-size: em($font-size-base + 2);
+    font-size: em($font-size-base + 4);
     margin: 0 auto;
   }
 
@@ -1635,6 +1634,11 @@ symbol {
 
 .icon-logo-madera-makers {
   width: 100px;
+  height: 80px
+}
+
+.icon-logotipo-madera-makers {
+  width: 180px;
   height: 80px
 }
 
@@ -3715,12 +3719,34 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 
 /*================ MODULES ================*/
 .site-header {
-  background-color: $color-body;
+  background-color: $color-text;
   position: relative;
   padding: 0 $gutter-site;
+  color: rgba(255,255,255,.8);
+
+  .search-header__input:hover + .btn--link {
+    color: white;
+    opacity: 1;
+  }
+
+  a,
+  .btn--link {
+    color: rgba(255,255,255,.8);
+
+    &:hover,
+    &:focus {
+      color: rgba(255,255,255,1);
+      opacity: 1;
+    }
+  }
+
+  .site-nav--active{
+    a {
+      color: white;
+    }
+  }
 
   @include media-query($small) {
-    border-bottom: 1px solid $color-border;
     padding: 0;
   }
 
@@ -3729,6 +3755,12 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
       padding-top: $grid-gutter;
     }
   }
+}
+
+.site-header--translucent {
+  background-color: rgba(34,34,34,.75);
+  position: absolute;
+  z-index: 1;
 }
 
 .announcement-bar {
@@ -4522,9 +4554,9 @@ $nav-button-padding: 15px;
   Extends default slick slider styles.
   Extra specificity in selectors is used to override defaults.
 ==============================================================================*/
-$slideshow-height-small: 475px;
-$slideshow-height-medium: 650px;
-$slideshow-height-large: 775px;
+$slideshow-height-small: 660px;
+$slideshow-height-medium: 760px;
+$slideshow-height-large: 885px;
 $slideshow-loader: #fff;
 $z-index-slideshow-image: 1;
 $z-index-slideshow-video: 2;
@@ -4539,15 +4571,15 @@ $color-slideshow-close-text: #000;
 
 .slideshow {
   overflow: hidden;
-  height: $slideshow-height-small - 150;
+  height: $slideshow-height-medium;
   margin-bottom: 0;
 
   &.slideshow--medium {
-    height: $slideshow-height-medium - 150;
+    height: $slideshow-height-medium;
   }
 
   &.slideshow--large {
-    height: $slideshow-height-large - 200;
+    height: $slideshow-height-large;
   }
 
   @include media-query($medium-up) {
@@ -4669,6 +4701,7 @@ $color-slideshow-close-text: #000;
 }
 
 .slideshow__image {
+  filter: grayscale(100%);
   transition: $transition-image-slideshow;
   position: absolute;
   top: 0;
@@ -4736,6 +4769,10 @@ $color-slideshow-close-text: #000;
   opacity: 0;
   z-index: $z-index-slideshow-text;
 
+  @include media-query($medium-up) {
+    top: calc(50% + 35px);
+  }
+
   .slick-active &,
   .no-js & {
     @include transform(translateY(-50%));
@@ -4769,6 +4806,7 @@ $color-slideshow-close-text: #000;
 .slideshow__subtitle {
   display: block;
   color: $color-overlay-title-text;
+  font-style: normal;
 }
 
 /*================ Video styles ================*/
@@ -5344,7 +5382,7 @@ $toolbar-height-small: 46px;
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  padding: $section-spacing 0;
+  padding: $section-spacing + 110 0 $section-spacing;
   color: $color-overlay-title-text;
   z-index: 2;
 }

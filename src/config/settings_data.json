@@ -1,6 +1,6 @@
 {
   "current": {
-    "color_text": "#3d4246",
+    "color_text": "#222222",
     "color_body_text": "#788188",
     "color_sale_text": "#dfa160",
     "color_borders": "#e8e9eb",
@@ -13,10 +13,10 @@
     "color_image_overlay_text": "#fff",
     "color_image_overlay": "#3d4246",
     "image_overlay_opacity": 25,
-    "color_body_bg": "#fff",
-    "type_header_family": "Google_Oswald_400_sans",
+    "color_body_bg": "#f0f0f0",
+    "type_header_family": "Special Elite",
     "type_header_base_size": "24px",
-    "type_base_family": "Google_Lato_400_sans",
+    "type_base_family": "Special Elite",
     "type_base_size": "16px",
     "type_bold_product_titles": false,
     "share_image": "",
@@ -24,14 +24,14 @@
     "share_twitter": false,
     "share_pinterest": true,
     "social_twitter_link": "",
-    "social_facebook_link": "https://facebook.com/maderamakers",
-    "social_pinterest_link": "https://www.pinterest.com.mx/maderamakers/",
-    "social_instagram_link": "https://www.instagram.com/maderamakers/",
+    "social_facebook_link": "https:\/\/facebook.com\/maderamakers",
+    "social_pinterest_link": "https:\/\/www.pinterest.com.mx\/maderamakers\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/maderamakers\/",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
     "social_youtube_link": "",
     "social_vimeo_link": "",
-    "favicon": "shopify://shop_images/LogoMaderMakersHachas.png",
+    "favicon": "",
     "checkout_header_image": "",
     "checkout_logo_image": "",
     "checkout_logo_position": "left",
@@ -51,7 +51,7 @@
         "type": "header",
         "settings": {
           "align_logo": "left",
-          "logo": "shopify://shop_images/LogoMaderMakersWeb.png",
+          "logo": "shopify:\/\/shop_images\/LogoMaderMakersWeb.png",
           "logo_max_width": "100",
           "main_linklist": "main-menu",
           "message": false,
@@ -62,44 +62,31 @@
           "color_text": "#fff"
         }
       },
-      "hero": {
-        "type": "hero",
-        "settings": {
-          "image": "shopify://shop_images/carpenter-at-work.jpg",
-          "alignment": "center",
-          "title": "FABRICAMOS TU MOBILIARIO A MEDIDA",
-          "text": "<p><em>En Madera Makers fabricamos y personalizamos cualquier tipo de proyecto en carpinter&iacute;a que tengas en mente.</em></p>",
-          "hero_size": "medium",
-          "text_size": "large",
-          "button_label": "Pide tu cotización ahora",
-          "button_link": "shopify://pages/muebles-a-medida"
-        }
-      },
       "slideshow": {
         "type": "slideshow",
         "blocks": {
           "slideshow-0": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/carpenter-at-work.jpg",
+              "image": "shopify:\/\/shop_images\/DSC02288_1.jpg",
               "alignment": "top",
-              "title": "FABRICAMOS TU MOBILIARIO A MEDIDA",
+              "title": "Hacemos tus muebles sueños a la medida",
               "subheading": "En Madera Makers fabricamos y personalizamos cualquier tipo de proyecto en carpintería que tengas en mente.",
               "link": "",
               "button_label": "Pide tu cotización ahora",
-              "button_link": "shopify://pages/muebles-a-medida"
+              "button_link": "shopify:\/\/pages\/muebles-a-medida"
             }
           },
           "slideshow-1": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/teak-headboard-table.jpg",
+              "image": "shopify:\/\/shop_images\/teak-headboard-table.jpg",
               "alignment": "top",
               "title": "PRODUCTOS PARA TU HOGAR Y OFICINA",
               "subheading": "Piezas muy atractivas, de gran calidad y 100% personalizables",
               "link": "",
               "button_label": "Mira nuestro catálogo",
-              "button_link": "shopify://collections/all"
+              "button_link": "shopify:\/\/collections\/all"
             }
           }
         },
@@ -117,8 +104,8 @@
       "featured-collections": {
         "type": "collection",
         "settings": {
-          "title": "Featured collection",
-          "collection": "frontpage",
+          "title": "Las piezas favoritas",
+          "collection": "tienda",
           "grid": 3,
           "rows": 2,
           "show_vendor": false,
@@ -128,10 +115,10 @@
       "feature-row": {
         "type": "feature-row",
         "settings": {
-          "image": "",
+          "image": "shopify:\/\/shop_images\/yellow-pillow-bedside-table.jpg",
           "layout": "left",
           "title": "Diseño y fabricación de muebles y proyectos a medida",
-          "text": "<p>En Madera Makers hacemos, desde el librero que no encuentras en ninguna tienda hasta el proyecto de interiorismo que necesitas entregar en tiempo y forma.</p>\n<p>Puedes confiar en nosotros. Cada proyecto que hacemos es &uacute;nico y por lo mismo ponemos la m&aacute;xima atenci&oacute;n a la calidad y a los detalles.</p>",
+          "text": "<p>En Madera Makers hacemos, desde el librero que no encuentras en ninguna tienda hasta el proyecto de interiorismo que necesitas entregar en tiempo y forma.<\/p>\n<p>Puedes confiar en nosotros. Cada proyecto que hacemos es &uacute;nico y por lo mismo ponemos la m&aacute;xima atenci&oacute;n a la calidad y a los detalles.<\/p>",
           "button_label": "",
           "button_link": ""
         }
@@ -139,19 +126,19 @@
       "footer": {
         "type": "footer",
         "settings": {
-          "footer_linklist": "footer",
-          "footer_linklist_two": "",
-          "footer_newsletter_enable": false,
-          "show_payment_icons": false
+          "footer_linklist": "main-menu",
+          "footer_linklist_two": "footer",
+          "footer_newsletter_enable": true,
+          "show_payment_icons": true
         }
       },
       "1520969478145": {
         "type": "feature-row",
         "settings": {
-          "image": "",
+          "image": "shopify:\/\/shop_images\/IMG_6152.JPG",
           "layout": "right",
           "title": "Productos únicos para necesidades únicas",
-          "text": "<p>Nuestros productos son otro boleto, nuestro respeto y amor por la madera as&iacute; como nuestra avanzada tecnolog&iacute;a nos permiten fabricar piezas de gran calidad y personalizables que facilitan tu vida y la hacen m&aacute;s bella.<br><br>Todos nuestros productos est&aacute;n garantizados y los ponemos en la puerta de tu hogar u oficina. Adem&aacute;s, aceptamos todos los medios de pago para tu total comodidad.</p>",
+          "text": "<p>Nuestros productos son otro boleto, nuestro respeto y amor por la madera as&iacute; como nuestra avanzada tecnolog&iacute;a nos permiten fabricar piezas de gran calidad y personalizables que facilitan tu vida y la hacen m&aacute;s bella.<br><br>Todos nuestros productos est&aacute;n garantizados y los ponemos en la puerta de tu hogar u oficina. Adem&aacute;s, aceptamos todos los medios de pago para tu total comodidad.<\/p>",
           "button_label": "",
           "button_link": ""
         }
@@ -162,21 +149,21 @@
           "1520969534191-0": {
             "type": "quote",
             "settings": {
-              "quote": "<p>Mand&eacute; hacer dos muebles custom y quedaron mejor que en el dise&ntilde;o y de excelente calidad.</p>",
+              "quote": "<p>Mand&eacute; hacer dos muebles custom y quedaron mejor que en el dise&ntilde;o y de excelente calidad.<\/p>",
               "author": "Ivan Sánchez"
             }
           },
           "1520969534191-1": {
             "type": "quote",
             "settings": {
-              "quote": "<p>Ped&iacute; dos mesas para la oficina, se entregaron a tiempo y con excelente calidad.</p>",
+              "quote": "<p>Ped&iacute; dos mesas para la oficina, se entregaron a tiempo y con excelente calidad.<\/p>",
               "author": "Georgina González"
             }
           },
           "1520969534191-2": {
             "type": "quote",
             "settings": {
-              "quote": "<p>Mand&eacute; hacer un librero de un dise&ntilde;o que me gust&oacute; de Pinterest y la verdad es que superaron toda expectativa, qued&oacute; padr&iacute;simo! Altamente recomendable!</p>",
+              "quote": "<p>Mand&eacute; hacer un librero de un dise&ntilde;o que me gust&oacute; de Pinterest y la verdad es que superaron toda expectativa, qued&oacute; padr&iacute;simo! Altamente recomendable!<\/p>",
               "author": "Guillermo Araiza"
             }
           }
@@ -193,73 +180,75 @@
       "hero-on-page": {
         "type": "hero-on-page",
         "settings": {
-          "image": "shopify://shop_images/man-crafting-wood.jpg",
+          "image": "shopify:\/\/shop_images\/DSC02322_1.jpg",
           "alignment": "center",
           "title": "FABRICAMOS TU MOBILIARIO A MEDIDA",
-          "text": "<p>Utilizamos las mejores t&eacute;cnicas tradicionales&nbsp;y la tecnolog&iacute;a m&aacute;s avanzada para entregarte la m&aacute;xima calidad.</p>",
+          "text": "<p>Nuestro compromiso es contigo, entendemos tu idea y entregamos en tiempo y forma tus piezas.&nbsp;<\/p>",
           "hero_size": "medium",
           "text_size": "large",
           "button_label": "PIDE TU COTIZACION AHORA",
-          "button_link": "https://madera-makers.myshopify.com/pages/muebles-a-medida#formulario-de-cotizacion"
+          "button_link": "https:\/\/madera-makers.myshopify.com\/pages\/muebles-a-medida#formulario-de-cotizacion"
         }
       },
-      "1521077890870": {
-        "type": "feature-columns",
-        "blocks": {
-          "1521077890870-0": {
-            "type": "text_block",
-            "settings": {
-              "enable_image": true,
-              "image": "",
-              "title": "Add a title or tagline",
-              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-              "button_label": "",
-              "button_link": ""
-            }
-          },
-          "1521077890870-1": {
-            "type": "text_block",
-            "settings": {
-              "enable_image": true,
-              "image": "",
-              "title": "Add a title or tagline",
-              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-              "button_label": "",
-              "button_link": ""
-            }
-          },
-          "1521077890870-2": {
-            "type": "text_block",
-            "settings": {
-              "enable_image": true,
-              "image": "",
-              "title": "Add a title or tagline",
-              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-              "button_label": "",
-              "button_link": ""
-            }
-          },
-          "1521078129039": {
-            "type": "text_block",
-            "settings": {
-              "enable_image": true,
-              "image": "",
-              "title": "Add a title or tagline",
-              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-              "button_label": "",
-              "button_link": ""
-            }
-          }
-        },
-        "block_order": [
-          "1521077890870-0",
-          "1521077890870-1",
-          "1521077890870-2",
-          "1521078129039"
-        ],
+      "collection-projects-template": {
+        "type": "collection-projects-template",
         "settings": {
-          "title": "¿CÓMO FUNCIONA?",
-          "align_text": "left"
+          "title": "Proyectos comerciales y residenciales",
+          "collection": "proyectos",
+          "grid": 3,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "hero-on-contact-page": {
+        "type": "hero-on-contact-page",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/abstract-hanging-wood-art.jpg",
+          "alignment": "center",
+          "title": "Contáctanos",
+          "text": "<p>Estamos listos para hacer realidad tus proyectos e ideas.<\/p>",
+          "hero_size": "medium",
+          "text_size": "large",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "map-on-page": {
+        "type": "map-on-page",
+        "settings": {
+          "heading": "El Taller",
+          "address": "<p>Av. Xochitl 2004<br>Col. Prados Tepeyac<br>Zapopan,&nbsp;Jalisco<\/p>\n<p>Lunes&nbsp;- Viernes,&nbsp;8:30am - 5pm<br>Citas&nbsp;333 444 37 78<\/p>",
+          "map_address": "Av. Xochitl 2004",
+          "button_text": "Cómo llegar",
+          "show_pin": true,
+          "api_key": "AIzaSyCdpJfZrojmg0c8NaZL9t7bJj9sTkaWDlY",
+          "background_image": "",
+          "background_image_position": "center center"
+        }
+      },
+      "1523381529443": {
+        "type": "collection-projects-template",
+        "settings": {
+          "title": "Proyectos a Medida",
+          "collection": "proyectos",
+          "grid": 3,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/carpenter-at-work.jpg",
+          "alignment": "center",
+          "title": "FABRICAMOS TU MOBILIARIO A MEDIDA",
+          "text": "<p><em>En Madera Makers fabricamos y personalizamos cualquier tipo de proyecto en carpinter&iacute;a que tengas en mente.<\/em><\/p>",
+          "hero_size": "medium",
+          "text_size": "large",
+          "button_label": "Pide tu cotización ahora",
+          "button_link": "shopify:\/\/pages\/muebles-a-medida"
         }
       }
     },
@@ -268,9 +257,8 @@
       "feature-row",
       "1520969478145",
       "featured-collections",
-      "hero",
       "1520969534191",
-      "1521077890870"
+      "1523381529443"
     ]
   },
   "presets": {
@@ -300,7 +288,8 @@
       "sections": {
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         },
         "hero": {
           "type": "hero",
@@ -313,18 +302,21 @@
           "blocks": {
             "slideshow-0": {
               "type": "image",
-              "settings": {}
+              "settings": {
+              }
             },
             "slideshow-1": {
               "type": "image",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "slideshow-0",
             "slideshow-1"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "featured-collections": {
           "type": "collection",
@@ -334,7 +326,8 @@
         },
         "feature-row": {
           "type": "feature-row",
-          "settings": {}
+          "settings": {
+          }
         },
         "footer": {
           "type": "footer",
@@ -489,20 +482,23 @@
         },
         "1492033809691": {
           "type": "map",
-          "settings": {}
+          "settings": {
+          }
         },
         "1492033877875": {
           "type": "quotes",
           "blocks": {
             "1492033877875-0": {
               "type": "quote",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "1492033877875-0"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "1492033924902": {
           "type": "custom-content",
@@ -528,15 +524,18 @@
           "blocks": {
             "1492096252560-0": {
               "type": "featured_collection",
-              "settings": {}
+              "settings": {
+              }
             },
             "1492096252560-1": {
               "type": "featured_collection",
-              "settings": {}
+              "settings": {
+              }
             },
             "1492096252560-2": {
               "type": "featured_collection",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
